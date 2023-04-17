@@ -1,0 +1,56 @@
+main {
+    padding: 2rem 10rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    margin-top: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+table th,
+table td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+th,
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@keyframes loading {
+    0% {
+        background-color: #f2f2f2;
+        opacity: 1;
+    }
+
+    50% {
+        background-color: #cccccc;
+        opacity: 0.5;
+    }
+
+    100% {
+        background-color: #f2f2f2;
+        opacity: 1;
+    }
+}
+
+tr.loading td {
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}

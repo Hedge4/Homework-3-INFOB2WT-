@@ -1,0 +1,97 @@
+header {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.expand-icon {
+    cursor: pointer;
+    position: fixed;
+    left: 1.4rem;
+    top: 1.4rem;
+    z-index: 3;
+    color: #FFFFFF;
+    transition: all 0.4s ease-in-out;
+    mix-blend-mode: difference;
+}
+
+.expand-icon.expanded {
+    left: calc(250px - 2* 1.4rem)
+}
+
+.expand-icon:hover {
+    transform: scale(1.2);
+}
+
+.sidebar.expanded {
+    left: 0;
+}
+
+.sidebar {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    height: 100%;
+    width: 250px;
+    left: -250px;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.sidebar h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li a {
+    padding-block: 10px;
+    transition: all 0.4s ease-in-out;
+    height: 100px;
+    font-size: larger;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.sidebar li img {
+    display: inline-block;
+    max-height: 100px;
+    max-width: 100px;
+    width: 35%;
+    filter: invert(100%);
+    opacity: 70%;
+    transition: all 0.4s ease-in-out;
+}
+
+.sidebar li p {
+    display: inline-block;
+    width: 35%;
+    transition: all 0.4s ease-in-out;
+}
+
+.sidebar li:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.sidebar li:hover img {
+    filter: unset;
+}
+
+.sidebar li:hover p {
+    filter: unset;
+    color: #1A1A1A;
+}

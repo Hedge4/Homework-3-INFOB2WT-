@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order History — Starlight Cinema</title>
+    <meta name="description" content="Review your order history at Starlight Cinema" />
+    <meta name="keywords" content="movie, cinema, theater" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style/theme.css" />
+    <link rel="stylesheet" type="text/css" href="style/layout.css" />
+    <link rel="stylesheet" type="text/css" href="style/pages/orders.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script src="javascript/interaction.js" defer></script>
+    <script src="javascript/showOrders.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Starlight Cinema</h1>
+    </header>
+
+    <div class="expand-icon">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">
+                    <!-- Video icon created by Freepik - Flaticon -->
+                    <img src="./resources/icons/movies.png" alt="Movies icon" />
+                    <p>Movies</p>
+                </a></li>
+            <li><a href="timetable.html">
+                    <!-- Schedule icon created by Freepik - Flaticon -->
+                    <img src="./resources/icons/timetable.png" alt="Timetable icon" />
+                    <p>Timetable</p>
+                </a>
+            </li>
+            <li><a href="login.html">
+                    <!-- Login icon created by Radhe Icon - Flaticon -->
+                    <img src="./resources/icons/login.png" alt="Login icon" />
+                    <p>Login</p>
+                </a>
+            </li>
+            <li><a href="register.html">
+                    <!-- Register icon created by Bharat Icons - Flaticon -->
+                    <img src="./resources/icons/register.png" alt="Registration icon" />
+                    <p>Register</p>
+                </a>
+            </li>
+            <!-- Depending on login state, hide login/register or history -->
+            <li><a href="order-history.html">
+                    <!-- History icons created by Freepik - Flaticon -->
+                    <img src="./resources/icons/history.png" alt="Order history icon" />
+                    <p>Order history</p>
+                </a>
+            </li>
+            <li><a href="about-us.html">
+                    <!-- Info icon created by Stockio - Flaticon -->
+                    <img src="./resources/icons/aboutus.png" alt="Information icon" />
+                    <p>About Us</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <h2>Order History of User X</h2>
+        <table id="order-table">
+            <thead>
+                <tr class="loading">
+                    <th>Movie</th>
+                    <th>Amount of Tickets</th>
+                    <th>Cost</th>
+                    <th>Order date</th>
+                    <th>Transaction ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="loading">
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                </tr>
+                <tr class="loading">
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                </tr>
+                <tr class="loading">
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                </tr>
+                <tr class="loading">
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                </tr>
+                <tr class="loading">
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                </tr>
+                <tr class="loading">
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>
